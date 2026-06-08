@@ -1,0 +1,192 @@
+    1  deactivate
+    2  mkdir cs131
+    3  ls
+    4  echo "cs131" > cs131/README.md
+    5  cd cd131
+    6  cd cs131/
+    7  git init
+    8  git add README.md
+    9  git commit -m"first cmomit"
+   10  git commit -m "first commit"
+   11  git config --global user.email "troytquach@gmail.com"
+   12  git commit -m "first commit"
+   13  git remote add origin https://github.com/genyajoe/cs131su26.git
+   14  git branch -M main
+   15  git push -u origin main
+   16  git remote add git@github.com:TrtQu/cs131.git
+   17  git push -u origin main
+   18  ls
+   19  git add .
+   20  git commit -m "first commit"
+   21  git config -- global user.email "troytquach@gmail.com"
+   22  git push
+   23  git push --set-upstream origin main
+   24  git remote add origin git@github.com:TrtQu/cs131.git
+   25  git branch -M main
+   26  git push -u origin main
+   27  ls
+   28  git remote add origin git@github.com:TrtQu/cs131.git
+   29  git branch -M main
+   30  git push -u origin main
+   31  git remote set-url origin git@github.com:TrtQu/cs131.git
+   32  git add .
+   33  git commit -m "first commit"
+   34  git config --global user.name "TrtQu"
+   35  git commit -m "first commit"
+   36  git push -u origin main
+   37  git status
+   38  git push -u origin main
+   39  git push
+   40  git push --set-upstream origin main
+   41  git remote remove origin
+   42  git remoote add origin git@github.com:TrtQu/cs131.git
+   43  git remote add origin git@github.com:TrtQu/cs131.git
+   44  git branch -M main
+   45  git push -u origin main
+   46  git add .
+   47  git commit -m "first commit"
+   48  ls
+   49  git push -u origin main
+   50  git push
+   51  git push --set-upstream origin main
+   52  git status
+   53  git remote -v
+   54  rm -r cs131
+   55  cd ..
+   56  rm -r cs131/
+   57  ls
+   58  mkdir cs131
+   59  cd cs131/
+   60  git remote add origin git@github.com:TrtQu/cs131.git
+   61  git branch -M main
+   62  git push -u origin main
+   63  ls
+   64  git remote add origin git@github.com:TrtQu/cs131.git
+   65  echo "cs131" > cs131/README.md
+   66  ls
+   67  echo "cs131" > cs131/README.md
+   68  cd ..
+   69  ls
+   70  cd cs131/
+   71  cd ..
+   72  echo "cs131" > cs131/README.md
+   73  cd cs131/
+   74  git init
+   75  git add README.md
+   76  git commit -m "first commit"
+   77  git branch -M main
+   78  git remote add origin git@github.com:TrtQu/cs131.git
+   79  git push -u origin main
+   80  git remote remove origin
+   81  git remote add origin git remote add origin https://github.com/TrtQu/cs131.git
+   82  git push -u origin main
+   83  git remote set-url origin https://github.com/TrtQu/cs131.git
+   84  git remote add origin https://github.com/TrtQu/cs131.git
+   85  git push -u origin main
+   86  pwd
+   87  cat README.md 
+   88  less README.md 
+   89  cd
+   90  ls /
+   91  cd cs131/
+   92  cd
+   93  ls / -l
+   94  /home
+   95  ls man
+   96  man ls
+   97  ls -a -r -l -h
+   98  ls -h
+   99  ls -a
+  100  ls -arlh
+  101  cd ~
+  102  mkdir -p cs131/ws1{logs,data,backup}
+  103  cd cs131/ws1
+  104  ls
+  105  cd cs131/
+  106  ls
+  107  mkdir ws1
+  108  ls
+  109  cd ws1
+  110  cd ..
+  111  mv ws1backup ws1/backup
+  112  ls
+  113  ls ws1
+  114  mv ws1datap ws1/data
+  115  mv ws1data ws1/data
+  116  mv ws1logs ws1/logs
+  117  ls
+  118  cd ws1
+  119  ls
+  120  touch answers.txt
+  121  ls
+  122  cd cs131/ws1
+  123  ls
+  124  for i in 1 2 3; do echo "row,value" > data/Data$.csv; done
+  125  echo "notes" > data/readme.txt
+  126  echo "hidden config" > .env
+  127  ls
+  128  head -c 2048   /dev/zero | tr '\0' 'a' > logs/app01.log
+  129  head -c 1048576 /dev/zero | tr '\0' 'b' > logs/app02.log
+  130  head -c 512    /dev/zero | tr '\0' 'c' > logs/BACKUP.001
+  131  ls ..
+  132  cd cs131/
+  133  git restore .
+  134  ls
+  135  cd ws1
+  136  ls
+  137  git restore .
+  138  cd data
+  139  ls
+  140  cd ..
+  141  mkdir 0608
+  142  cd 0608
+  143  touch aa.txt
+  144  touch a.txt
+  145  touch b.txt
+  146  touch bb.txt
+  147  ls
+  148  mkdir copied
+  149  ls
+  150  clear
+  151  cp a*.txt copied/
+  152  ls copied/
+  153  cd copied/
+  154  rm a*.txt
+  155  ls
+  156  cd ..
+  157  cp [ab][ab].txt copied/
+  158  ls copied/
+  159  cd ..
+  160  ls
+  161  rm -r ws1/
+  162  ls
+  163  cd 0608/
+  164  vim aa.txt
+  165  cat aa.txt
+  166  less aa.txt
+  167  head aa.txt
+  168  tail aa.tzt
+  169  tail aa.txt
+  170  head -4 aa.txt
+  171  vim b.txt
+  172  cat b
+  173  cat b.txt
+  174  sort b.txt
+  175  cat b.txt
+  176  wc b.txt
+  177  grep "ba" b.txt 
+  178  sort b.txt > sortedb.txt
+  179  cat sortedb.txt
+  180  ls > lsresults.txt
+  181  cat lsresults.txt 
+  182  ls > sortedb.txt
+  183  cat sortedb.txt
+  184  sort b.txt >> sortedb.txt
+  185  cat sortedb.txt 
+  186  rm copied/
+  187  rm copied/ 2> log.txt
+  188  cat log.txt 
+  189  rm copied/ 2> /dev/null
+  190  cat /dev/null
+  191  history 500
+  192  history 500 > log
