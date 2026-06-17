@@ -1,0 +1,24 @@
+A1: ls-l > listing.txt, date >> listing.txt
+A2: ls /nonexistent_dir 2> errors.txt
+A3: ls /nonexistent_dir /etc > output.txt 2> errors.txt
+A4: ls /nonexistent_dir /etc &> combined.txt
+A5: I see the full list of the /etc directory and I don't see the /nonexistent_dir. This is because the 2> operator grabs the error and redirects it. /dev/null is a digital trash can. Any data redirected into it is instantly discarded.
+A6: sort fruits.txt | uniq
+A7: sort fruits.txt | uniq -c | sort -nr
+A8: grep ERROR server.log | wc -l
+A9: cat server.log | grep ERROR > errors_only.txt
+A10: grep -oE '^[A-Z]' server.log | sort | uniq -c | sort -nr
+A11: grep -oE '"state":"[^"]+"' /data/yelp/yelp_academic_dataset_business.json | sort | uniq -c | sort -nr | head -5
+B1: uid=1038(ishigaki-cs5) gid=1038(ishigaki-cs5) groups=1038(ishigaki-cs5),44(video),988(docker),993(render). UID is a unique number that identifies my specific and individual user account. GID is similar, but identifies a collection of users. Groups are used to share file and directory permissions among multiple people.
+B2: Owner: -rw- allows read and write. Group  rw- allows read and write. Other: r-- allows read only.
+B3: current umask value is 0002. My default permissions are -rw-rw-r-- for a new file.
+B4: the error is permission denied. command to restore own read and write access: chmod u+rw secret.txt
+B5: chmod 640 fruits.txt
+B6: find . -type f -user ishigaki-cs5 -perm -u+w
+C1: 1] 854977
+C2: Job number: [1], Status: Running, Command: bash long.sh > log.txt &
+C3: The state shows Stopped
+C4: bg
+C5: The command sends SIGTERM (signal 15) to terminate the program whn no signal is specified.
+C6: ps -p 855650
+C7: The disown command removes the job from the shell's active job table, preventing it from receiving the SIGHUP signal that normally kills all child processes when a terminal is closed.
