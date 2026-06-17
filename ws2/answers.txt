@@ -1,0 +1,16 @@
+Q1: echo "task: practice git" >> notes.md", git add notes.md, git commit -m "ws2: add task line"
+Q2: git log -3 --oneline
+Q3: short hash:  12ae34f
+Q4: git revert 12ae34f
+Q5: git rm --cached bigdata.bin, echo "bigdata.bin" >> .gitignore, git add .gitignore, git commit --amend --no-edit, git push
+git checkout -b feature-summary
+Q7: touch summary.md
+Q8: git diff main feature-summary
+Q9: git switch main, git merge feature-summary
+Q10: git branch -d feature-summary
+Q11: git merge conflict-branch
+Q12: git status
+Q13: vim summary.md
+Q14: git add summary.md, git commit -m "added summary.md"
+Q15: git fetch origin, git log HEAD..origin/main --oneline
+Q16: git fetch downloads remote updates to my repo without altering my active workspace. git pull downloads the updates and instantly merges them into my current branch.
