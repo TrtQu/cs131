@@ -1,0 +1,12 @@
+T1:
+https://gist.github.com/zachbrowne/8bc414c9f30192067831fafebd14255c#file-the-ultimate-bad-ass-bashrc-file-L302
+cpg(): 
+stands for copy and go. It allows the user to copy a file to a target destination and then changes the current working directory to that destination.
+How it is implemented: args: $1 and $2. When the command cpg file.txt /Documents, file.txt is the first arg and /Documents is the second. if[-d "$2"]; then: the -d flag is a test condition that checks if a specific path exists as a directory. The function checks if $w is an actual folder. (cp $1 $2 && cd $2): if the destination is a directory, it runs the copy command. The && operator makes it so that if the first thing succeeds, then it runs cd $2 to move to that directory. (else cp $1 $2): this is the fallback. If the second argument is not a directory, it skips cd entirely. It runs a standard copy command.
+
+https://gist.github.com/zachbrowne/8bc414c9f30192067831fafebd14255c#file-the-ultimate-bad-ass-bashrc-file-L322
+mkdirg():
+Stands for make directory and go. It creates a new folder and then immediately changes the current working directory to it.
+How it is implemented: Argument: $1: when the command is run like mkdirg ~/Documents/new_project, the path typed is the first argument. (mkdir -p $1) runs the standard mkdir command. -p is a parent flag. It creates any missing parent directories in the path and suppresses error messages if the directory exists. (cd $1)moves the current working directory to the new one.
+
+T2:
