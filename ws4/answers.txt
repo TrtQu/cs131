@@ -10,3 +10,26 @@ Stands for make directory and go. It creates a new folder and then immediately c
 How it is implemented: Argument: $1: when the command is run like mkdirg ~/Documents/new_project, the path typed is the first argument. (mkdir -p $1) runs the standard mkdir command. -p is a parent flag. It creates any missing parent directories in the path and suppresses error messages if the directory exists. (cd $1)moves the current working directory to the new one.
 
 T2:
+https://github.com/TrtQu/cs131/blob/80579c5fee0700f57f845bb621da0e01e9cb55e1/ws4/.bashrc#L123
+
+alias cs131="cs ~/cs131 && ls -la"
+
+This is an alias to quickly navigate to the cs131 repository
+
+https://github.com/TrtQu/cs131/blob/80579c5fee0700f57f845bb621da0e01e9cb55e1/ws4/.bashrc#L126
+
+mkws() {
+	mkdir -p ~/cs131/"$1"
+	touch ~/cs131/"$1"/answer.txt
+	cd ~/cs131/"$1"
+}
+
+This is a function that creates a new worksheet directory and initializes answer.txt
+
+https://github.com/TrtQu/cs131/blob/80579c5fee0700f57f845bb621da0e01e9cb55e1/ws4/.bashrc#L133
+
+if [ -d "$HOME/cs131/.git" ]; then
+	alias sync131="cd ~/cs131 && git pull"
+fi
+
+This if statement safely checks before creating a git sync alias
