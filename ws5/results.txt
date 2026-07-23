@@ -1,0 +1,57 @@
+B2: For every $1 increase in the total bill, the predicted tip increases by around $0.9, and for every additional person in the party, the predicted tip increases by around $0.21.
+
+Batch [80e3453308a0486ab055b0b3bd90b571] submitted.
+WARNING: No runtime version specified. Using the default runtime version. It is recommended to select a specific major.minor runtime version in production, as the default runtime version may change at any time.
+Using the default container image
+Waiting for container log creation
+PYSPARK_PYTHON=/opt/dataproc/conda/bin/python
+Generating /home/spark/.pip/pip.conf
+Configuring index-url as 'https://us-python.pkg.dev/artifact-registry-python-cache/virtual-python/simple/'
+JAVA_HOME=/usr/lib/jvm/temurin-17-jdk-amd64
+SPARK_EXTRA_CLASSPATH=
+:: loading settings :: file = /etc/spark/conf/ivysettings.xml
+26/07/23 01:02:55 WARN MetricsConfig: Cannot locate configuration: tried hadoop-metrics2-google-hadoop-file-system.properties,hadoop-metrics2.properties
+26/07/23 01:02:56 INFO MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+26/07/23 01:02:56 INFO MetricsSystemImpl: google-hadoop-file-system metrics system started
+--- Initial DataFrame ---
++----------+----+------+------+---+------+----+
+|total_bill| tip|   sex|smoker|day|  time|size|
++----------+----+------+------+---+------+----+
+|     16.99|1.01|Female|    No|Sun|Dinner|   2|
+|     10.34|1.66|  Male|    No|Sun|Dinner|   3|
+|     21.01| 3.5|  Male|    No|Sun|Dinner|   3|
+|     23.68|3.31|  Male|    No|Sun|Dinner|   2|
+|     24.59|3.61|Female|    No|Sun|Dinner|   4|
++----------+----+------+------+---+------+----+
+only showing top 5 rows
+
+26/07/23 01:03:11 WARN Instrumentation: [96e1b6ef] regParam is zero, which might cause numerical instability and overfitting.
+26/07/23 01:03:12 WARN InstanceBuilder: Failed to load implementation from:dev.ludovic.netlib.blas.VectorBLAS
+
+========================================
+MODEL EVALUATION RESULTS
+========================================
+Coefficients: [0.09145843635504758,0.21070300388935664]
+Intercept:  0.6178364054767158
+RMSE:       0.9917585899142384
+R^2:         0.47574015044898343
+========================================
+
+Batch [80e3453308a0486ab055b0b3bd90b571] finished.
+metadata:
+  '@type': type.googleapis.com/google.cloud.dataproc.v1.BatchOperationMetadata
+  batch: projects/tactical-coder-499516-s9/locations/us-central1/batches/80e3453308a0486ab055b0b3bd90b571
+  batchUuid: 425a456a-cd65-4fda-992d-e2c66cca0a59
+  createTime: '2026-07-23T01:01:25.884877Z'
+  description: Batch
+  labels:
+    goog-dataproc-batch-id: 80e3453308a0486ab055b0b3bd90b571
+    goog-dataproc-batch-uuid: 425a456a-cd65-4fda-992d-e2c66cca0a59
+    goog-dataproc-drz-resource-uuid: batch-425a456a-cd65-4fda-992d-e2c66cca0a59
+    goog-dataproc-location: us-central1
+  operationType: BATCH
+  warnings:
+  - No runtime version specified. Using the default runtime version. It is recommended
+    to select a specific major.minor runtime version in production, as the default
+    runtime version may change at any time.
+name: projects/tactical-coder-499516-s9/regions/us-central1/operations/121febeb-d8aa-3bfd-ad5e-a6116af1b5d8
